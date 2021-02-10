@@ -3,5 +3,6 @@ xhr.open('get', 'https://api.github.com/networks/GreyVader1993/Project-Alpha/eve
 xhr.send();
 
 xhr.onload = function() {
-    console.log(xhr.response);
+    console.log(xhr.response[0]["actor"]['login']);
+    console.log(xhr.response.length);
 };
